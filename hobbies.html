@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <meta name="description" content="Painting and Bharatanatyam, outside the lab with Chhavi." />
+    <title>Off the clock | Chhavi</title>
+    <link rel="stylesheet" href="styles.css?v=14" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="site-header">
+      <a class="wordmark" href="index.html">C<span>S</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a><a href="research.html">Research</a
+        ><a href="projects.html">Projects</a><a href="experience.html">Experience</a
+        ><a href="leadership.html">Leadership</a
+        ><a class="active" href="hobbies.html">Off the clock</a><a href="awards.html">Highlights</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button theme-toggle" aria-label="Switch color theme">
+          <span class="theme-icon">☼</span></button
+        ><button class="icon-button menu-toggle" aria-label="Open navigation">☰</button>
+      </div>
+    </header>
+    <main>
+      <section class="page-hero section-wrap">
+        <p class="eyebrow"><span class="pulse-dot"></span> PERSONAL PRACTICE / COLOR × MOVEMENT</p>
+        <h1>Off the<br /><em>clock.</em></h1>
+        <p>
+          Painting and Bharatanatyam are the portals to my paracosm.
+        </p>
+      </section>
+      <section class="page-content section-wrap">
+        <div class="hobby-columns">
+          <div class="reveal">
+            <h2>Painting</h2>
+            <p>
+              I like oil on canvas. However, I also experiment with brush pens and watercolors. 
+            </p>
+            <div class="painting-gallery" data-painting-gallery>
+              <button
+                class="painting-canvas"
+                type="button"
+                aria-label="Change painting study palette"
+                data-palette="1"
+              >
+                <span class="canvas-sun"></span><span class="canvas-hill hill-one"></span
+                ><span class="canvas-hill hill-two"></span
+                ><span class="canvas-hill hill-three"></span
+                ><span class="canvas-caption">PALETTE STUDY 01 · CLICK TO SHIFT</span></button
+              ><button
+                class="painting-canvas palette-2"
+                type="button"
+                aria-label="Change second painting study palette"
+                data-palette="2"
+              >
+                <span class="canvas-sun"></span><span class="canvas-hill hill-one"></span
+                ><span class="canvas-hill hill-two"></span
+                ><span class="canvas-hill hill-three"></span
+                ><span class="canvas-caption">PALETTE STUDY 02 · CLICK TO SHIFT</span></button
+              ><button
+                class="painting-canvas palette-3"
+                type="button"
+                aria-label="Change third painting study palette"
+                data-palette="3"
+              >
+                <span class="canvas-sun"></span><span class="canvas-hill hill-one"></span
+                ><span class="canvas-hill hill-two"></span
+                ><span class="canvas-hill hill-three"></span
+                ><span class="canvas-caption">PALETTE STUDY 03 · CLICK TO SHIFT</span></button
+              ><label class="painting-upload"
+                >＋ Add painting previews<input
+                  type="file"
+                  accept="image/*"
+                  multiple
+                  data-painting-files
+              /></label>
+            </div>
+            <div class="note-box">
+              The displayed landscapes are interactive placeholders. Add paintings here for a
+              session preview, then copy the chosen files to <code>media/paintings/</code> and wire
+              their paths into this gallery before publishing.
+            </div>
+          </div>
+          <div class="reveal">
+            <h2>Bharatanatyam</h2>
+            <div class="video-stack">
+              <div class="video-slot">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  aria-label="Bharatanatyam video one"
+                ></video
+                ><label class="video-upload"
+                  >＋<input
+                    type="file"
+                    accept="video/*"
+                    data-video-target="0"
+                    aria-label="Add first dance video" /></label
+                ><span class="video-label">CLIP 01 · ADD VIDEO</span>
+              </div>
+              <div class="video-slot compact">
+                <video
+                  controls
+                  playsinline
+                  preload="metadata"
+                  aria-label="Bharatanatyam video two"
+                ></video
+                ><label class="video-upload"
+                  >＋<input
+                    type="file"
+                    accept="video/*"
+                    data-video-target="1"
+                    aria-label="Add second dance video" /></label
+                ><span class="video-label">CLIP 02 · ADD VIDEO</span>
+              </div>
+            </div>
+            <div class="note-box">
+              For the published site, place optimized MP4s in <code>media/dance/</code> and add a
+              <code>&lt;source&gt;</code> to the matching video element. Local previews are not
+              uploaded or published.
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <dialog class="art-lightbox" id="art-lightbox">
+      <button type="button" aria-label="Close painting preview">×</button
+      ><img alt="Selected painting preview" />
+      <p></p>
+    </dialog>
+    <footer class="site-footer">
+      <a class="wordmark" href="index.html">C<span>S</span></a>
+      <p>
+        Made with 🩷 <span>© <span data-year></span> CHHAVI SINGH</span>
+      </p>
+      <div><a href="index.html">HOME ↗</a></div>
+      <nav class="footer-socials" aria-label="Social profiles">
+        <a
+          href="https://www.linkedin.com/in/chhavi-akansha-singh-361962248/"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://github.com/chhaviakku"
+          aria-label="GitHub"
+          title="GitHub"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        <a
+          href="https://orcid.org/0009-0006-9656-1612"
+          aria-label="ORCID"
+          title="ORCID"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i class="fa-brands fa-orcid" aria-hidden="true"></i>
+        </a>
+        <a href="mailto:chhavi.akan@gmail.com" aria-label="Email" title="Email">
+          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+        </a>
+      </nav>
+    </footer>
+    <script src="script.js?v=9"></script>
+  </body>
+</html>
