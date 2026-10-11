@@ -4,117 +4,154 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="icon" type="image/png" href="assets/favicon.png" />
-    <meta name="description" content="Leadership, mentoring, and community work by Chhavi." />
-    <title>Leadership | Chhavi</title>
+    <meta name="description" content="Leadership, academic volunteering, teaching support, and community service by Chhavi Singh." />
+    <title>Leadership & Service | Chhavi</title>
     <link rel="stylesheet" href="styles.css?v=14" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+      .service-section { padding: 58px 0 16px; }
+      .service-section + .service-section { padding-top: 76px; }
+      .service-heading { display:flex; align-items:baseline; gap:18px; margin:0 0 28px; }
+      .service-heading h2 { font:500 clamp(30px,4vw,46px)/1.1 var(--display); letter-spacing:-.055em; margin:0; }
+      .service-heading .eyebrow { margin:0; color:var(--lime); }
+      .content-card { min-height:250px; padding:25px; }
+      .content-card .card-top { display:flex; align-items:center; gap:17px; margin-bottom:20px; }
+      .org-logo { width:66px; height:66px; flex:0 0 66px; display:grid; place-items:center; border:1px solid var(--line); background:var(--bg); padding:7px; overflow:hidden; }
+      .org-logo img { width:100%; height:100%; object-fit:contain; }
+      .org-logo.nss { border-radius:50%; }
+      .org-logo.nss img { width:115%; height:115%; }
+      .card-heading { min-width:0; }
+      .card-heading .eyebrow { margin:0 0 5px; font-size:14px; }
+      .content-card h3 { font:500 24px/1.25 var(--display); letter-spacing:-.045em; margin:0; }
+      .content-card .card-subtitle { color:var(--fg); opacity:.82; font-size:16px; margin:5px 0 0; }
+      .content-card > p { margin-bottom:16px; }
+      .content-card .tag-list { margin-top:18px; }
+      .teaching-header { display:flex; align-items:center; gap:20px; margin-bottom:26px; }
+      .teaching-header .org-logo { width:76px; height:76px; flex-basis:76px; }
+      .teaching-header .service-heading { margin:0; }
+      .material-list { border-top:1px solid var(--line); }
+      .material-item { display:grid; grid-template-columns:52px minmax(0,1fr) auto; gap:18px; align-items:center; padding:21px 8px; border-bottom:1px solid var(--line); transition:background .2s,padding .2s; }
+      .material-item:hover { background:color-mix(in srgb,var(--lime),transparent 94%); padding-left:15px; padding-right:15px; }
+      .material-index { color:var(--lime); font:16px var(--mono); }
+      .material-title { font:500 19px/1.35 var(--display); letter-spacing:-.025em; margin:0 0 4px; }
+      .material-meta { color:var(--muted); font:14px var(--mono); letter-spacing:.035em; margin:0; }
+      .material-link { color:var(--lime); font:14px var(--mono); text-transform:uppercase; letter-spacing:.04em; white-space:nowrap; border-bottom:1px solid var(--line); padding-bottom:4px; }
+      .material-link:hover { color:var(--fg); border-color:var(--lime); }
+      @media (max-width:760px) {
+        .service-section { padding-top:42px; }
+        .service-section + .service-section { padding-top:56px; }
+        .service-heading { align-items:flex-start; flex-direction:column; gap:7px; }
+        .content-card { padding:20px; }
+        .org-logo { width:58px; height:58px; flex-basis:58px; }
+        .teaching-header { align-items:flex-start; gap:14px; }
+        .teaching-header .org-logo { width:58px; height:58px; flex-basis:58px; }
+        .material-item { grid-template-columns:32px minmax(0,1fr); gap:12px; padding:18px 2px; }
+        .material-link { grid-column:2; justify-self:start; margin-top:3px; }
+      }
+    </style>
   </head>
   <body>
     <div class="noise"></div>
     <header class="site-header">
       <a class="wordmark" href="index.html">C<span>S</span></a>
       <nav class="main-nav" id="main-nav">
-        <a href="index.html">Home</a><a href="research.html">Research</a
-        ><a href="projects.html">Projects</a><a href="experience.html">Experience</a
-        ><a class="active" href="leadership.html">Leadership</a
-        ><a href="hobbies.html">Off the clock</a><a href="awards.html">Highlights</a>
+        <a href="index.html">Home</a><a href="research.html">Research</a>
+        <a href="projects.html">Projects</a><a href="experience.html">Experience</a>
+        <a class="active" href="leadership.html">Leadership</a>
+        <a href="hobbies.html">Off the clock</a><a href="awards.html">Highlights</a>
       </nav>
       <div class="header-actions">
-        <button class="icon-button theme-toggle" aria-label="Switch color theme">
-          <span class="theme-icon">☼</span></button
-        ><button class="icon-button menu-toggle" aria-label="Open navigation">☰</button>
+        <button class="icon-button theme-toggle" aria-label="Switch color theme"><span class="theme-icon">☼</span></button>
+        <button class="icon-button menu-toggle" aria-label="Open navigation">☰</button>
       </div>
     </header>
+
     <main>
       <section class="page-hero section-wrap">
-        <p class="eyebrow"><span class="pulse-dot"></span> LEADERSHIP </p>
+        <p class="eyebrow"><span class="pulse-dot"></span> leadership & Volunteering</p>
         <h1>Build the<br /><em>team, too.</em></h1>
-        <p>
-          
-        </p>
+        <p>Building communities, curating supplementary material for courses and labs, and everything in-between.</p>
       </section>
+
       <section class="page-content section-wrap">
-        <div class="content-grid">
-          <article class="content-card reveal">
-            <p class="eyebrow">[ROLE] · [DATES]</p>
-            <h2>[Robotics club / student chapter]</h2>
-            <p>
-              Organized [program, workshop, or competition] for [audience]. Coordinated [team size /
-              partners] and delivered [specific outcome].
-            </p>
-            <div class="tag-list"><span>Team building</span><span>Technical events</span></div>
-            <span class="card-arrow">↗</span>
-          </article>
-          <article class="content-card reveal">
-            <p class="eyebrow">[ROLE] · [DATES]</p>
-            <h2>[Mentoring / outreach]</h2>
-            <p>
-              Supported [learners or community] in exploring robotics and engineering through
-              [activity]. [Evidence of reach or outcome.]
-            </p>
-            <div class="tag-list"><span>Mentoring</span><span>STEM outreach</span></div>
-            <span class="card-arrow">↗</span>
-          </article>
-          <article class="content-card reveal">
-            <p class="eyebrow">[ROLE] · [DATES]</p>
-            <h2>[Lab coordination / collaboration]</h2>
-            <p>
-              Helped a multidisciplinary group share tools, document experiments, and make research
-              more reproducible.
-            </p>
-            <div class="tag-list"><span>Research culture</span><span>Open tools</span></div>
-            <span class="card-arrow">↗</span>
-          </article>
-          <article class="content-card reveal">
-            <p class="eyebrow">[ROLE] · [DATES]</p>
-            <h2>[Community or volunteering]</h2>
-            <p>
-              Describe a commitment, what you contributed, and who benefited. Keep the focus on the
-              work and shared result.
-            </p>
-            <div class="tag-list"><span>Community</span><span>Service</span></div>
-            <span class="card-arrow">↗</span>
-          </article>
-        </div>
+        <section class="service-section" aria-labelledby="leadership-heading">
+          <div class="service-heading"><h2 id="leadership-heading">Leadership</h2></div>
+          <div class="content-grid">
+            <article class="content-card reveal">
+              <div class="card-top">
+                <div class="org-logo"><img src="images/logos/Noesis_Research.UG_concept_art_logo.png" alt="Noesis Research.UG logo" /></div>
+                <div class="card-heading"><p class="eyebrow">CO-FOUNDER · 2026–PRESENT</p><h3>Noesis Research.UG</h3><p class="card-subtitle">Student-led undergraduate research initiative</p></div>
+              </div>
+              <p>Co-founded a student-led non-profit initiative with <strong>Chinmay Deo</strong> to expand access to mentorship and funding for undergraduate research in the electrical sciences.</p>
+            </article>
+            <article class="content-card reveal">
+              <div class="card-top">
+                <div class="org-logo"><img src="images/logos/nitj_logo.png" alt="Dr. B. R. Ambedkar National Institute of Technology Jalandhar logo" /></div>
+                <div class="card-heading"><p class="eyebrow">MENTOR · 2024–2025</p><h3>D-SAMP</h3><p class="card-subtitle">Department Student Academic Mentorship Programme</p></div>
+              </div>
+              <p>Mentored a cohort of a dozen first-year students from the Instrumentation and Control Engineering (ICE) department.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="service-section" aria-labelledby="teaching-heading">
+          <div class="teaching-header">
+            <div class="org-logo"><img src="images/logos/nitj_logo.png" alt="NIT Jalandhar logo" /></div>
+            <div class="service-heading"><h2 id="teaching-heading">Teaching <span class="accent-text">& Academic Volunteering</span></h2></div>
+          </div>
+          <div class="material-list" aria-label="Presentations and academic materials">
+            <article class="material-item reveal">
+              <span class="material-index">01</span>
+              <div><h3 class="material-title">Optical Measurement Systems: Intensity & Wavelength Modulation</h3><p class="material-meta">ICPE356 · Advanced Measurement Systems · Presentation</p></div>
+              <!-- Replace # with the presentation URL. -->
+              <a class="material-link" href="./teaching/ICPE356.pdf" aria-label="Open optical measurement systems presentation">View material ↗</a>
+            </article>
+            <article class="material-item reveal">
+              <span class="material-index">02</span>
+              <div><h3 class="material-title">Simulation Laboratory — Lab Manual</h3><p class="material-meta">ICPC322 · Laboratory material</p></div>
+              <!-- Replace # with the lab manual URL. -->
+              <a class="material-link" href="./teaching/ICPC322.pdf" aria-label="Open Simulation Laboratory manual">View material ↗</a>
+            </article>
+            <article class="material-item reveal">
+              <span class="material-index">03</span>
+              <div><h3 class="material-title">Understanding the Loading Effect</h3><p class="material-meta">ICPC204 · Transducers and Signal Conditioning · Presentation</p></div>
+              <!-- Replace # with the presentation URL. -->
+              <a class="material-link" href="./teaching/ICPC204.pdf" aria-label="Open loading effect presentation">View material ↗</a>
+            </article>
+            <article class="material-item reveal">
+              <span class="material-index">04</span>
+              <div><h3 class="material-title">Hair Hygrometer</h3><p class="material-meta">ICPC324 · Laboratory poster</p></div>
+              <!-- Replace # with the poster URL. -->
+              <a class="material-link" href="./teaching/Poster.pdf" aria-label="Open hair hygrometer poster">View material ↗</a>
+            </article>
+          </div>
+        </section>
+
+        <section class="service-section" aria-labelledby="volunteering-heading">
+          <div class="service-heading"><h2 id="volunteering-heading">Social Service</h2></div>
+          <div class="content-grid">
+            <article class="content-card reveal">
+              <div class="card-top">
+                <div class="org-logo nss"><img src="images/logos/nss_logo.png" alt="National Service Scheme logo" /></div>
+                <div class="card-heading"><p class="eyebrow">COMMUNITY VOLUNTEERING · 2022–2023</p><h3>National Service Scheme (NSS)</h3><p class="card-subtitle">Freshman year</p></div>
+              </div>
+              <p>Participated in community volunteering through the National Service Scheme during the first year of undergraduate study.</p>
+              <div class="tag-list"><span>Community service</span></div>
+            </article>
+          </div>
+        </section>
       </section>
     </main>
+
     <footer class="site-footer">
       <a class="wordmark" href="index.html">C<span>S</span></a>
-      <p>
-        Made with 🩷 <span>© <span data-year></span> CHHAVI SINGH</span>
-      </p>
+      <p>Made with 🩷 <span>© <span data-year></span> CHHAVI SINGH</span></p>
       <div><a href="index.html">HOME ↗</a></div>
       <nav class="footer-socials" aria-label="Social profiles">
-        <a
-          href="https://www.linkedin.com/in/chhavi-akansha-singh-361962248/"
-          aria-label="LinkedIn"
-          title="LinkedIn"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://github.com/chhaviakku"
-          aria-label="GitHub"
-          title="GitHub"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-github" aria-hidden="true"></i>
-        </a>
-        <a
-          href="https://orcid.org/0009-0006-9656-1612"
-          aria-label="ORCID"
-          title="ORCID"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <i class="fa-brands fa-orcid" aria-hidden="true"></i>
-        </a>
-        <a href="mailto:chhavi.akan@gmail.com" aria-label="Email" title="Email">
-          <i class="fa-solid fa-envelope" aria-hidden="true"></i>
-        </a>
+        <a href="https://www.linkedin.com/in/chhavi-akansha-singh-361962248/" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in" aria-hidden="true"></i></a>
+        <a href="https://github.com/chhaviakku" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+        <a href="https://orcid.org/0009-0006-9656-1612" aria-label="ORCID" title="ORCID" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-orcid" aria-hidden="true"></i></a>
+        <a href="mailto:chhavi.akan@gmail.com" aria-label="Email" title="Email"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
       </nav>
     </footer>
     <script src="script.js?v=9"></script>
